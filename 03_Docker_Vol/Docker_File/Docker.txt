@@ -1,0 +1,6 @@
+How to create docker volume from docker file 
+STEP 1: Create dockerfile 
+STEP 2: Add parameter VOLUME [ "/data" ]
+STEP 3: docker build -t <img> .
+STEP 4: docker run –name c1 -itd -v <v_name> :/data <img>
+STEP 5: docker run – name c2 -itd –volumes-from c1 <img>

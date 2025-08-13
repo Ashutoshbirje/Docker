@@ -1,0 +1,20 @@
+How to create Dockerfile:
+STEP 1: Create Folder and Open it to VS code
+STEP 2: Create File with name (DockerFile)
+STEP 3: Write all parameters 
+	
+How to create  .dockerignore file
+STEP 1: Create File with name (.dockerignore)
+STEP 2: Mention file names in the .dockerignore 
+
+How to create image:
+STEP 1: Create Folder and Open it to VS code
+STEP 2: Create File (DockerFile)
+STEP 3: docker build -t <img_name> :tag  directory 
+STEP 4: docker images
+STEP 5: docker run <img_name>
+
+How to Host on Docker Hub:
+STEP 1: docker tag <img_id> user_name/repo_name
+STEP 2: docker login -u <user_name>
+STEP 3: docker push user_name/repo_name

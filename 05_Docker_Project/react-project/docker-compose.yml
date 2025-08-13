@@ -1,0 +1,14 @@
+
+services:
+  react-project-dev:
+    container_name: react-project-container
+    image: react-project-dev-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/react-project
+      - /react-project/node_modules  # Avoid host overwriting node_modules in container
+    command: npm run dev

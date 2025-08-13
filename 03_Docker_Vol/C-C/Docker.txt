@@ -1,0 +1,10 @@
+How to create volume betweeen two container 
+
+METHOD 1: Create volume then mount to container 
+-	docker volume create myvol
+-	docker run -- name c1 -itd -v myvol:/myapp1 <img>
+-	docker run --name c2 -itd -v myvol:/myapp2 <img>
+
+METHOD 2: Create container with volume (Not persistant)
+-	docker run – name c1 -itd -v /myvol <img>
+-	docker run – name c2 -itd –volumes-from c1 <img>

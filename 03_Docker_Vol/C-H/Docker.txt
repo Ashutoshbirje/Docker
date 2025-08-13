@@ -1,0 +1,5 @@
+How to create volume betweeen Host and container 
+STEP1: Create folder in host OS 
+STEP2: Copy path of the folder and paste to <v_name/path>
+STEP2: docker run --name <ctr_name> -itd -v <v_name/path>:/myapp <img>
+STEP4: Open container in exec mode and Verify 

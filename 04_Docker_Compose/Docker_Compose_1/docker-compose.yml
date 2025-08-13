@@ -1,0 +1,26 @@
+services:
+  web:
+    image: "nginx"
+    ports:
+     - "5000:80"
+    networks:
+     - my_networks
+    depends_on:
+     - db
+     - rache
+  rache:
+    image: "redis:${TAG}"
+    # profiles:
+    #   - rediscasshe 
+  db:
+   image: mysql
+   #  environment: 
+   #   - MYSQL_ROOT_PASSWORD=1234
+   env_file:
+    - mysqlconfig.env
+   networks:
+    - my_networks
+
+networks:
+  my_networks:
+    driver: bridge 
