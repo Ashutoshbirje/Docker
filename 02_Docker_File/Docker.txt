@@ -18,3 +18,12 @@ How to Host on Docker Hub:
 STEP 1: docker tag <img_id> user_name/repo_name
 STEP 2: docker login -u <user_name>
 STEP 3: docker push user_name/repo_name
+
+Multi-Stage build (Optimization)
+--> Create Dockerfile in stages 
+--> Use first stage (Build) for second stage (Execution)
+--> Final image having minimum size as possible 
+
+Distroless Build (Optimization)
+--> Specific environment for the Application as per need 
+--> Use distroless images 
