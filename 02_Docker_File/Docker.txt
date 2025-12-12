@@ -2,15 +2,15 @@ How to create Dockerfile:
 STEP 1: Create Folder and Open it to VS code
 STEP 2: Create File with name (DockerFile)
 STEP 3: Write all parameters 
-	
-How to create  .dockerignore file
+
+How to create .dockerignore file
 STEP 1: Create File with name (.dockerignore)
 STEP 2: Mention file names in the .dockerignore 
 
 How to create image:
 STEP 1: Create Folder and Open it to VS code
 STEP 2: Create File (DockerFile)
-STEP 3: docker build -t <img_name> :tag  directory 
+STEP 3: docker build -t <img_name>:tag  directory 
 STEP 4: docker images
 STEP 5: docker run <img_name>
 
@@ -26,4 +26,4 @@ Multi-Stage build (Optimization)
 
 Distroless Build (Optimization)
 --> Specific environment for the Application as per need 
---> Use distroless images 
+--> Use distroless images
